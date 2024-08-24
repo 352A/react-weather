@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  background-color: #1b262c;
+  background-image: url(images/bg.png);
+  font-family: "Poppins", sans-serif;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  filter: blur(100px);
+  opacity: 0.1;
+  background-color: #74b4d8;
+}
+
+body::before {
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: #74b4d8;
+  opacity: 0.3;
+}
+
+body::after {
+  top: 50%;
+  left: 80%;
+  width: 250px;
+  height: 250px;
+  background-color: #4a9dcd;
+  opacity: 0.2;
+}
+
+h1 {
+  color: white;
+  margin: 45px 75px;
+}
+
+.hero-text {
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.title {
+  background: linear-gradient(to bottom right, #caecff, #78cfff);
+  background-clip: text;
+  color: transparent;
+}
+
+input {
+  width: 90%;
+  height: 50px;
+  margin: 65px auto;
+  display: block;
+  padding-left: 20px;
+  background-color: #24343d;
+  border: none;
+  color: white;
+  border-radius: 12px;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+.card {
+  background-color: #24353e;
+  margin: 80px auto;
+  padding: 25px;
+  width: 15%;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+}
+
+.info-container {
+  padding: 0 25px;
+  position: relative;
+  margin-top: 160px;
+}
+
+/* .icon {
+  width: 120px;
+  margin: 25px auto;
+  display: block;
+} */
+
+.weather-icon {
+  width: 350px;
+  position: absolute;
+  bottom: 165px;
+  left: 5px;
+}
+
+.blur {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  filter: blur(40px);
+  opacity: 0.5;
+  background-color: #74b4d8;
+  margin-top: 25px;
+  margin-left: 95px;
+  position: absolute;
+}
+
+.card span {
+  font-size: 2rem;
+  font-weight: lighter;
+  font-family: "Poppins", sans-serif;
+}
+
+.card p {
+  font-size: 15px;
+}
+
+span:first-of-type {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-right: 10px;
+}
